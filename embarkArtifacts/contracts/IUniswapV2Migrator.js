@@ -1,0 +1,6 @@
+import EmbarkJS from '../embarkjs';
+
+const IUniswapV2MigratorConfig = {"abiDefinition":[{"inputs":[{"internalType":"address","name":"token","type":"address"},{"internalType":"uint256","name":"amountTokenMin","type":"uint256"},{"internalType":"uint256","name":"amountETHMin","type":"uint256"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"migrate","outputs":[],"stateMutability":"nonpayable","type":"function"}],"className":"IUniswapV2Migrator","args":[],"gas":"auto","silent":false,"track":true,"deploy":false,"realRuntimeBytecode":"","realArgs":[],"code":"","runtimeBytecode":"","linkReferences":{},"swarmHash":"","gasEstimates":null,"functionHashes":{"migrate(address,uint256,uint256,address,uint256)":"b7df1d25"},"filename":"/mnt/512-2/dfd/SvetAng2/EmbarkUniswapRouter02/.embark/contracts/interfaces/IUniswapV2Migrator.sol","originalFilename":"contracts/interfaces/IUniswapV2Migrator.sol","path":"/mnt/512-2/dfd/SvetAng2/EmbarkUniswapRouter02/contracts/interfaces/IUniswapV2Migrator.sol","type":"file","deploymentAccount":"0x4AE013A1417453Bbd06930814A6cA79D63eF8a88"};
+const IUniswapV2Migrator = new EmbarkJS.Blockchain.Contract(IUniswapV2MigratorConfig);
+
+export default IUniswapV2Migrator;

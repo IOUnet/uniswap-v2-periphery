@@ -1,0 +1,6 @@
+import EmbarkJS from '../embarkjs';
+
+const IWETHConfig = {"abiDefinition":[{"inputs":[],"name":"deposit","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"withdraw","outputs":[],"stateMutability":"nonpayable","type":"function"}],"className":"IWETH","args":[],"gas":"auto","silent":false,"track":true,"deploy":false,"realRuntimeBytecode":"","realArgs":[],"code":"","runtimeBytecode":"","linkReferences":{},"swarmHash":"","gasEstimates":null,"functionHashes":{"deposit()":"d0e30db0","transfer(address,uint256)":"a9059cbb","withdraw(uint256)":"2e1a7d4d"},"filename":"/mnt/512-2/dfd/SvetAng2/EmbarkUniswapRouter02/.embark/contracts/interfaces/IWETH.sol","originalFilename":"contracts/interfaces/IWETH.sol","path":"/mnt/512-2/dfd/SvetAng2/EmbarkUniswapRouter02/contracts/interfaces/IWETH.sol","type":"file","deploymentAccount":"0x4AE013A1417453Bbd06930814A6cA79D63eF8a88"};
+const IWETH = new EmbarkJS.Blockchain.Contract(IWETHConfig);
+
+export default IWETH;

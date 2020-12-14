@@ -1,0 +1,6 @@
+import EmbarkJS from '../embarkjs';
+
+const IUniswapV2CalleeConfig = {"abiDefinition":[{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"uint256","name":"amount0","type":"uint256"},{"internalType":"uint256","name":"amount1","type":"uint256"},{"internalType":"bytes","name":"data","type":"bytes"}],"name":"uniswapV2Call","outputs":[],"stateMutability":"nonpayable","type":"function"}],"className":"IUniswapV2Callee","args":[],"gas":"auto","silent":false,"track":true,"deploy":false,"realRuntimeBytecode":"","realArgs":[],"code":"","runtimeBytecode":"","linkReferences":{},"swarmHash":"","gasEstimates":null,"functionHashes":{"uniswapV2Call(address,uint256,uint256,bytes)":"10d1e85c"},"filename":"/mnt/512-2/dfd/SvetAng2/EmbarkUniswapRouter02/.embark/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Callee.sol","originalFilename":"contracts//mnt/512-2/dfd/SvetAng2/EmbarkUniswapRouter02/.embark/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Callee.sol","path":"/mnt/512-2/dfd/SvetAng2/EmbarkUniswapRouter02/contracts/.embark/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Callee.sol","type":"file","deploymentAccount":"0x4AE013A1417453Bbd06930814A6cA79D63eF8a88"};
+const IUniswapV2Callee = new EmbarkJS.Blockchain.Contract(IUniswapV2CalleeConfig);
+
+export default IUniswapV2Callee;
