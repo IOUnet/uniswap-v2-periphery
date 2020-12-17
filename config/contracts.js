@@ -29,13 +29,14 @@ module.exports = {
     // filteredFields: [],
 
     deploy: {
-      WETH9: {
+      WETH: {
          fromIndex: 0,
          args: []
        },
     UniswapV2Router02: {
       fromIndex: 0,
-      args: ["0xFC7C84325b94F5926E99aE3275f600Aa816B52a9", "0x78EaB34e91a233d5459135Fe40bdF2a801AD40d5"]
+      args: ["0xE0bB768e2f80E9b18F4b3971a0a2260deb715Fcd", //factory
+       "0x5EdC3C74Fdd1D6E2e304e8921202D3c8787fF87d"] //weth addr
     }}
      //0xFC7C84325b94F5926E99aE3275f600Aa816B52a9
   },
@@ -44,12 +45,18 @@ module.exports = {
   // assumed to be the intended environment by `embark run`
   development: {
     dappConnection: [
-      "ws://localhost:8546",
+      "ws://localhost:8545",
       "http://localhost:8545",
       "$WEB3"  // uses pre existing web3 object if available (e.g in Mist)
     ]
   },
-
+  gana: {
+    dappConnection: [
+    //  "ws://localhost:8546",
+      "http://localhost:8080",
+   //   "$WEB3"  // uses pre existing web3 object if available (e.g in Mist)
+    ]
+  },
   // merges with the settings in default
   // used with "embark run privatenet"
   privatenet: {},
